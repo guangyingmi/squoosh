@@ -240,7 +240,7 @@ export default class Intro extends Component<Props, State> {
               class={style.blobCanvas}
             />
           )}
-          <h1 class={style.logoContainer}>
+          {/* <h1 class={style.logoContainer}>
             <img
               class={style.logo}
               src={logoWithText}
@@ -248,7 +248,7 @@ export default class Intro extends Component<Props, State> {
               width="539"
               height="162"
             />
-          </h1>
+          </h1> */}
           <div class={style.loadImg}>
             {showBlobSVG && (
               <svg
@@ -434,7 +434,7 @@ export default class Intro extends Component<Props, State> {
                 class={style.footerWave}
               />
             </svg>
-            <div class={style.footerPadding}>
+            {/* <div class={style.footerPadding}>
               <footer class={style.footerItems}>
                 <a
                   class={style.footerLink}
@@ -450,14 +450,14 @@ export default class Intro extends Component<Props, State> {
                   Source on Github
                 </a>
               </footer>
-            </div>
+            </div> */}
           </div>
         </footer>
-        {beforeInstallEvent && (
+        {/* {beforeInstallEvent && (
           <button class={style.installBtn} onClick={this.onInstallClick}>
             Install
           </button>
-        )}
+        )} */}
       </div>
     );
   }
