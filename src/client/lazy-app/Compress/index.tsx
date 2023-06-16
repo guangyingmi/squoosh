@@ -454,7 +454,7 @@ export default class Compress extends Component<Props, State> {
       localStorage.setItem('leftSideSettings', leftSideSettings);
       // Firing an event when we save side settings in localstorage
       window.dispatchEvent(new CustomEvent('leftSideSettings'));
-      await this.props.showSnack('Left side settings saved', {
+      await this.props.showSnack('左侧设置已保存', {
         timeout: 1500,
         actions: ['dismiss'],
       });
@@ -469,7 +469,7 @@ export default class Compress extends Component<Props, State> {
       localStorage.setItem('rightSideSettings', rightSideSettings);
       // Firing an event when we save side settings in localstorage
       window.dispatchEvent(new CustomEvent('rightSideSettings'));
-      await this.props.showSnack('Right side settings saved', {
+      await this.props.showSnack('右边设置已保存', {
         timeout: 1500,
         actions: ['dismiss'],
       });
@@ -496,7 +496,7 @@ export default class Compress extends Component<Props, State> {
       this.setState({
         sides: cleanSet(this.state.sides, index, newLeftSideSettings),
       });
-      const result = await this.props.showSnack('Left side settings imported', {
+      const result = await this.props.showSnack('左侧设置已导入', {
         timeout: 3000,
         actions: ['undo', 'dismiss'],
       });
@@ -518,7 +518,7 @@ export default class Compress extends Component<Props, State> {
         sides: cleanSet(this.state.sides, index, newRightSideSettings),
       });
       const result = await this.props.showSnack(
-        'Right side settings imported',
+        '右侧设置已导入',
         {
           timeout: 3000,
           actions: ['undo', 'dismiss'],
