@@ -286,12 +286,8 @@ export default class Intro extends Component<Props, State> {
               </button>
               <div>
                 <span class={style.dropText}>拖拽</span>或者{' '}
-                {supportsClipboardAPI ? (
-                  <button class={style.pasteBtn} onClick={this.onPasteClick}>
-                    粘贴（单张图片哦～）
-                  </button>
-                ) : (
-                  'Paste'
+                {supportsClipboardAPI && (
+                  <span class={style.dropText}>复制粘贴（单张图片哦～）</span>
                 )}
               </div>
             </div>
