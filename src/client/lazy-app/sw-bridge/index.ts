@@ -87,7 +87,7 @@ export async function offliner(showSnack: SnackBarElement['showSnackbar']) {
   await updateReady(reg);
 
   // Ask the user if they want to update.
-  const result = await showSnack('Update available', {
+  const result = await showSnack('有可用的更新', {
     actions: ['reload', 'dismiss'],
   });
 

@@ -355,7 +355,7 @@ export default class Intro extends Component<Props, State> {
             <SlideOnScroll>
               <div class={style.infoContent}>
                 <div class={style.infoTextWrapper}>
-                  <h2 class={style.infoTitle}>Small</h2>
+                  <h2 class={style.infoTitle}>更小更快</h2>
                   <p class={style.infoCaption}>
                     较小的图像意味着更快的加载时间。我们可以减小文件大小并保持高质量。
                   </p>
@@ -379,7 +379,7 @@ export default class Intro extends Component<Props, State> {
             <SlideOnScroll>
               <div class={style.infoContent}>
                 <div class={style.infoTextWrapper}>
-                  <h2 class={style.infoTitle}>Simple</h2>
+                  <h2 class={style.infoTitle}>更简单更灵活</h2>
                   <p class={style.infoCaption}>
                     打开本地图片，检查差异，然后立即保存下载。想要自定义？提供灵活的设置。
                   </p>
@@ -403,7 +403,7 @@ export default class Intro extends Component<Props, State> {
             <SlideOnScroll>
               <div class={style.infoContent}>
                 <div class={style.infoTextWrapper}>
-                  <h2 class={style.infoTitle}>Secure</h2>
+                  <h2 class={style.infoTitle}>更安全更隐私</h2>
                   <p class={style.infoCaption}>
                     担心隐私？图片永远不会离开您的设备，因为我们在本地完成所有工作。
                   </p>
